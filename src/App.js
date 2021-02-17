@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom'
 import About from './About'
+import AjaxGetExample from './AjaxGetExample'
 import BasicExample from './BasicExample'
 import Contact from './Contact'
 import FormExample from './FormExample'
@@ -17,6 +18,7 @@ class App extends React.Component {
                     <Route exact path="/contact" component={Contact}></Route>
                     <Route exact path="/basicexample" component={BasicExample}></Route>
                     <Route exact path="/form" component={FormExample}></Route>
+                    <Route exact path="/ajaxgetexample" component={AjaxGetExample}></Route>
                 </Switch>
             </Router>
         )
